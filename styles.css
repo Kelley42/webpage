@@ -5,6 +5,29 @@ html {
 /*Header section*/
 header {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+nav,
+ul {
+    display: flex;
+}
+
+nav {
+    padding: 10px 150px;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: auto;
+    list-style-type: none;
+    gap: 20px;
 }
 
 .logo, 
@@ -14,8 +37,9 @@ button,
     color: #F9FAF8;
 }
 
-.logo {
-    font-size: 24px;
+main {
+    display: flex;
+    padding: 50px 150px;
 }
 
 ul, 
@@ -24,8 +48,8 @@ ul,
     color: #E5E7EB;
 }
 
-ul {
-    list-style-type: none;
+.text-area {
+    width: 50%;
 }
 
 .text-area h1 {
@@ -35,30 +59,65 @@ ul {
 
 .text-area p {
     font-size: 18px;
+    flex-wrap: wrap;
 }
 
 button {
     background-color: #3882F6;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
 .rounded {
-    border-radius: 7%;
+    border-radius: 10%;
 }
 
 #no-outline {
     border: solid #3882F6;
 }
 
+main img {
+    width: 50%
+}
 /*Body section (boxes)*/
+
+.boxes {
+    margin-bottom: 75px;
+}
+
+.box-area {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+}
+
 .boxes h1 {
     font-size: 36px;
     font-weight: 800;
-    color: #1F2937
+    color: #1F2937;
+    text-align: center;
+    padding: 20px;
 }
 
+.pic-area {
+    width: 15%;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
 .pic-area img {
     border: solid #3882F6;
+    width: 150px;
+    height: 150px;
+    margin: auto;
 }
+.pic-area p {
+    text-align: center;
+}
+
 
 /*Body section (quote)*/
 #quote {
